@@ -2,6 +2,12 @@
 
 API REST para gestão financeira de empresas, desenvolvida em ASP.NET Core.
 
+## 📝 Sobre o Back-end
+
+Este projeto é uma API REST desenvolvida em ASP.NET Core para gerenciar empresas, entradas e resultados financeiros. Ele oferece rotas para cadastro, consulta, atualização, exclusão e geração de relatórios, facilitando a integração com sistemas front-end.
+
+> ⚠️ Atenção: Os dados não são salvos permanentemente, pois o projeto não utiliza banco de dados. Todas as informações são mantidas apenas em memória e serão perdidas ao reiniciar, atualizar ou escalar o serviço.
+
 ## 🌐 Demonstração do Projeto
 
 Acesse o front-end do projeto em: [financeiro-front-plum.vercel.app](https://financeiro-front-plum.vercel.app)
@@ -68,15 +74,6 @@ O arquivo `Dockerfile` está incluso apenas para facilitar o deploy no Render. N
 | `PUT /api/finance/result/{id}`              | Atualiza um resultado financeiro existente pelo ID |
 | `DELETE /api/finance/result/{id}`           | Remove um resultado financeiro pelo ID |
 | `GET /api/finance/report`                   | Gera um relatório financeiro consolidado do período informado |
-
-## 📝 Observações
-
-- Este projeto é apenas para fins educacionais e demonstração.
-- Os dados são voláteis e não persistem após reinicializações ou atualizações do serviço.
-- Não há autenticação, autorização ou integração com banco de dados.
-- Para uso em produção, recomenda-se adicionar persistência, segurança e testes automatizados.
-
-> ⚠️ Este projeto é uma versão inicial e será expandido em breve com mais funcionalidades, persistência de dados e melhorias para uso em produção.
 
 ## 🛠️ Tecnologias Utilizadas
 
