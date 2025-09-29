@@ -13,7 +13,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactApp",
         policy =>
         {
-            policy.WithOrigins("http://localhost:5173")
+            policy.WithOrigins("https://financeiro-front-plum.vercel.app")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
